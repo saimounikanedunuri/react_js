@@ -16,6 +16,16 @@ import Stylesheet from './components/Stylesheet'
 import Inline from './components/Inline';
 import './appStyles.css'
 import styles from './appStyles.module.css'
+import Form from './components/Form';
+import FragmentDemo from './components/FragmentDemo';
+import ParentComp from './components/ParentComp';
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter'
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo'
 
 class App extends Component {
   render() {
@@ -42,6 +52,16 @@ class App extends Component {
         <Inline /><hr/>
         <h1 className='error'>Error</h1><hr/>
         <h1 class={styles.success}>Success</h1>
+        <Form /><hr/>
+        <FragmentDemo /><hr/>
+        <ParentComp /><hr/>
+        <RefsDemo /><hr/>
+        <FocusInput /><hr/>
+        <FRParentInput /><hr/>
+        <ClickCounter /><hr/>
+        <HoverCounter /><hr/>
+        <ClickCounterTwo/><hr/>
+        <HoverCounterTwo /><hr/>
       </div>
     );
   }
